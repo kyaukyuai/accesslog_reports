@@ -39,6 +39,8 @@ _TEXT_
 # send mail
 $logger->info("Start send mail");
 my $mail = new Mail($to, $from, $subject);
+$mail->set_text($msg);
+$mail->send();
 $logger->info("Finished send mail");
 
 1;
