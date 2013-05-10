@@ -28,6 +28,10 @@ if (-e $accesslog) {
     $accessCount ++;
   }
   close (LOG);
+} else {
+  # accesslog is not exitst
+  $logger->info("$accesslog is NOT EXIST!!!");
+  exit(1);
 }
 $logger->info("Finished Calculating $accesslog");
 
