@@ -13,7 +13,7 @@ my $logger = new Logger();
 my ($YYYY, $MM, $DD) = Date->get_yesterday();
 
 # set mail config
-my $accesslog = "/var/log/httpd/accesslog-$YYYY$MM$DD";
+my $accesslog = "/var/log/httpd/access_log-$YYYY$MM$DD";
 my $sendmail  = "";
 my $from      = "y.kakui\@gmail.com";
 my $to        = "y.kakui\@gmail.com";
