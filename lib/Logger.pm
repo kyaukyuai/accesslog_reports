@@ -4,6 +4,8 @@ use warnings;
 use strict;
 use Date;
 
+our $VERSION = '0.01';
+
 sub new {
   my $class = shift;
   my ($file_handle) = @_;

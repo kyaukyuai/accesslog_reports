@@ -6,6 +6,8 @@ use MIME::Base64 qw(encode_base64 decode_base64);
 use constant SENDMAIL => '/usr/sbin/sendmail';
 use constant NKF => '/usr/bin/nkf';
 
+our $VERSION = '0.01';
+
 sub new {
   my $class = shift;
   my $self = {
